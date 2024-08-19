@@ -1,0 +1,21 @@
+# Ignore Python bytecode
+__pycache__/
+*.pyc
+
+# Ignore environment files
+.env
+venv/
+.DS_Store
+
+# Ignore system files
+*.log
+*.tmp
+
+# Ignore any file that contain senstive information
+ignore.py
+Pipfile
+Pipfile.lock
+LICENSE
+
+# Ignore files that were downloaded in
+*.idea
