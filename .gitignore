@@ -19,3 +19,4 @@ LICENSE
 
 # Ignore files that were downloaded in
 *.idea
+test.py
