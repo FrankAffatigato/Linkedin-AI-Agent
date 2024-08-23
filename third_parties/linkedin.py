@@ -3,7 +3,7 @@ import requests
 from dotenv import load_dotenv
 load_dotenv()
 
-def scrape_linkedin_profile(linkedin_profile_url: str, mock:bool=True):
+def scrape_linkedin_profile(linkedin_profile_url: str, mock:bool=False):
 
     if mock:
         linkedin_profile_url = "https://gist.githubusercontent.com/FrankAffatigato/492c49343f06906f5f5ada0a9a401804/raw"

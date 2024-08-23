@@ -28,7 +28,7 @@ def lookup(name: str) ->str:
         temperature=0,
         model_name="gpt-3.5-turbo"
     )
-    template = """Given the full name {name_of_person} I want you to get it me a link to their Linkedin profile page. Your answer should contain only a URL"""
+    template = """Given the full name {name_of_person} I want you to get it me a link to their Linkedin profile page. Your answer should contain only a profile URL and not a public dir URL. If there is more than 1 user, just choose most relevant. URL should NOT contain (pub/dir)"""
 
     prompt_template = PromptTemplate(
         template=template, input_variables=["name_of_person"]
