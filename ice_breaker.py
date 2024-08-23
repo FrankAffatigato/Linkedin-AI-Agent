@@ -11,7 +11,7 @@ from output_parsers import summary_parser, Summary
 from typing import Tuple
 
 def ice_break_with(name: str) -> Tuple[Summary, str]:
-    linkedin_username = linkedin_lookup_agent(name=name)
+    linkedin_username = "https://www.linkedin.com/in/frank-affatigato-9a705a172/" #linkedin_lookup_agent(name=name)
     linkedin_data = scrape_linkedin_profile(linkedin_profile_url=linkedin_username)
 
     summary_template = """
